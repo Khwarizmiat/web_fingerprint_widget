@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>   
+        <record id="finger_view_users_form" model="ir.ui.view">
+            <field name="name">res.users.form.finger</field>
+            <field name="model">res.partner</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook colspan="4" position="inside">
+                    <page string="Biometrics">
+                        <field name="biometric" widget="biometric"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</openerp>
+
